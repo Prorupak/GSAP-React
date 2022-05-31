@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import { gsap, Power3 } from "gsap";
 import styled from "styled-components";
@@ -28,21 +29,21 @@ const Container = styled.div`
 `;
 
 const CircleAnimations = () => {
-  let { toggles, circleRefs, circles, container } = useExpand();
+  let { toggles, circleRefs, container } = useExpand();
 
   React.useEffect(() => {
     gsap.to(container.current, {
       duration: 0,
       visibility: "visible",
     });
-    gsap.from(circles.circles1, {
+    gsap.from(circleRefs.circle1.current, {
       duration: 0.8,
       opacity: 1,
       x: 40,
 
       ease: Power3.easeOut,
     });
-    gsap.from(circles.circles2, {
+    gsap.from(circleRefs.circle2.current, {
       duration: 0.8,
       delay: 0.2,
       opacity: 0,
@@ -50,7 +51,7 @@ const CircleAnimations = () => {
 
       ease: Power3.easeOut,
     });
-    gsap.from(circles.circles3, {
+    gsap.from(circleRefs.circle3.current, {
       duration: 0.8,
       delay: 0.4,
       opacity: 0,
@@ -58,7 +59,7 @@ const CircleAnimations = () => {
 
       ease: Power3.easeOut,
     });
-  }, []);
+  }, [container]);
 
   return (
     <Container ref={container}>
