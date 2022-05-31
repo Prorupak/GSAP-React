@@ -61,8 +61,6 @@ const CircleAnimations = () => {
     });
   }, [container]);
 
-
-
   return (
     <Container ref={container}>
       <Circle ref={circleRefs.circle1} onClick={toggles.toggle1} />
