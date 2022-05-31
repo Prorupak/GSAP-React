@@ -58,7 +58,7 @@ const CircleAnimations = () => {
 
       ease: Power3.easeOut,
     });
-  }, []);
+  }, [circles.circles1, circles.circles2, circles.circles3, container]);
 
   return (
     <Container ref={container}>

@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-import logo from "../img/gsap-greensock.svg";
-let Logos = require("../img/gsap-greensock.svg");
 
 const Nav = styled.nav`
   position: sticky;
