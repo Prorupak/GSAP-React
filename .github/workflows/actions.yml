@@ -1,5 +1,5 @@
 on:
-  push:
+ push:
       branches: main
 name: 🚀 Deploy website on push
 jobs:
@@ -17,8 +17,8 @@ jobs:
 
     - name: 🔨 Build Project
       run: |
-        npm install
-        npm run build
+        yarn install
+        yarn build
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
