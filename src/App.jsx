@@ -10,7 +10,7 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/circle-animations" element={<CircleAnimations />} />
+        <Route path="/" element={<CircleAnimations />} />
       </Routes>
     </>
   );

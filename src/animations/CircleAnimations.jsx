@@ -59,7 +59,9 @@ const CircleAnimations = () => {
 
       ease: Power3.easeOut,
     });
-  }, [container]);
+  }, [container, circleRefs]);
+
+
 
   return (
     <Container ref={container}>
