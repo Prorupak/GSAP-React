@@ -53,9 +53,9 @@ const useExpand = (state) => {
       toggleAnimate(circle3.current, 100, 100);
       toggleAnimate(circle1.current, 50, 50);
       toggleAnimate(circle2.current, 50, 50);
-      setCircles1(true);
+      setCircles1(false);
       setCircles2(false);
-      setCircles3(false);
+      setCircles3(true);
     }
     if (circles3 === true) {
       setCircles3(false);
