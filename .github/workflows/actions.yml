@@ -17,8 +17,8 @@ jobs:
 
     - name: 🔨 Build Project
       run: |
-        yarn install
-        yarn build
+        npm install
+        npm run build
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
