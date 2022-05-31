@@ -6,6 +6,7 @@ import CircleAnimations from "./animations/CircleAnimations";
 const App = () => {
   return (
     <>
+      <h1>hello</h1>
       <Navbar />
       <Routes>
         <Route path="/" element={<CircleAnimations />} />
