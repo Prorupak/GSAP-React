@@ -29,7 +29,7 @@ const Container = styled.div`
 `;
 
 const CircleAnimations = () => {
-  let { toggles, circleRefs, circles, container } = useExpand();
+  let { toggles, circleRefs, container } = useExpand();
 
   React.useEffect(() => {
     gsap.to(container.current, {
