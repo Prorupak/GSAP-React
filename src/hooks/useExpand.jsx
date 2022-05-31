@@ -70,9 +70,9 @@ const useExpand = (state) => {
   };
 
   const circles = {
-    circles1: circle1.current,
-    circles2: circle2.current,
-    circles3: circle3.current,
+    circles1,
+    circles2,
+    circles3,
   };
 
   const circleRefs = {
