@@ -59,7 +59,7 @@ const CircleAnimations = () => {
 
       ease: Power3.easeOut,
     });
-  }, [container, circleRefs]);
+  }, [container]);
 
 
 
